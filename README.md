@@ -55,12 +55,12 @@ This project provides a simple and hassle-free setup for Zigbee2MQTT using Docke
 
    ```yaml
    devices:
-     - /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0:/dev/ttyACM0
+     - usb-1a86_USB_Serial-if00-port0:/dev/ttyACM0
    ```
 
    Replace the left-hand side of the colon with your Zigbee adapter's device path as noted down earlier.
 
-7. **Timezone Configuration**:
+7. **(Optional) Timezone Configuration**:
    Update the `docker-compose.yml` file to set your timezone in the environment section:
 
    ```yaml
